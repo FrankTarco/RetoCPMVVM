@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvReporteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Como super salado de 30gr"
+                android:textColor="@color/success"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+            <TextView
+                android:id="@+id/tvReporteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Esta decripcion del producto dice que es el mas rico de todos en el cine"
+                android:lineSpacingExtra="-4dp"
+                android:lineSpacingMultiplier="0.8"
+                android:textColor="@color/gray"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textAppearance="?attr/textAppearanceTitleMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReporteCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cant. 2"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/success"
+            android:textStyle="normal|italic"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+        <TextView
+            android:id="@+id/tvReporteMonto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="S/62.00"
+            android:textColor="@color/success"
+            android:textStyle="normal|italic"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
