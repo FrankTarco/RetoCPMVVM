@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.NewProductRegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="Nuevo producto"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_floating_button">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiyTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTituloInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titulo"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiyPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPrecioInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiyDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/margin_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDescripcionInsert"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Descripcion"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiyImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtImageInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Image"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tiyCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCategoriaInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Categoria"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegistarProductoAPI"
+            style="?attr/materialButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/second"
+            android:layout_marginTop="@dimen/margin_floating_button"
+            android:layout_marginLeft="@dimen/margin_floating_button"
+            android:layout_marginRight="@dimen/margin_floating_button"
+            android:text="Registrar"
+            android:elevation="2dp"
+            app:icon="@drawable/baseline_add_24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

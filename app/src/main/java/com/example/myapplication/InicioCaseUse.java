@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import com.example.myapplication.view.DulceriaFragment;
 import com.example.myapplication.view.Home;
 import com.example.myapplication.view.LoginFragment;
+import com.example.myapplication.view.ProductFragment;
 
 public class InicioCaseUse {
 
@@ -18,7 +19,7 @@ public class InicioCaseUse {
             frag = new DulceriaFragment();
         }
         else{
-            frag = new LoginFragment();
+            frag = new ProductFragment();
         }
 
         return frag;
